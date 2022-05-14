@@ -1,6 +1,7 @@
 //assalomu aleykum
 //Xorazmshoh
 
+const cors = require("core");
 const express = require("express");
 const server = express();
 const fs = require("fs");
@@ -11,6 +12,8 @@ server.listen(PORT,() => {
     console.log(`Server ready at ${PORT}`)
 })
 
+
+server.use(core())
 server.use(express.json());
 server.use(express.urlencoded({extended: true}));
 
