@@ -1,7 +1,7 @@
 //assalomu aleykum
 //Xorazmshoh
 
-const cors = require("core");
+const cors = require("cors");
 const express = require("express");
 const server = express();
 const fs = require("fs");
@@ -13,7 +13,7 @@ server.listen(PORT,() => {
 })
 
 
-server.use(core())
+server.use(cors())
 server.use(express.json());
 server.use(express.urlencoded({extended: true}));
 
