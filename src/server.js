@@ -1,3 +1,6 @@
+//assalomu aleykum
+//Xorazmshoh
+
 const express = require("express");
 const server = express();
 const fs = require("fs");
